@@ -1,324 +1,221 @@
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Mattel - Norwegian Toy Market Analysis Report</title>
-<script src="https://www.google.com/search?q=https://cdn.tailwindcss.com"></script>
-<link href="https://www.google.com/search?q=https://fonts.googleapis.com/css2%3Ffamily%3DInter:wght%40400%3B600%3B700%3B800%26display%3Dswap" rel="stylesheet">
-<style>
-/* Overall Dark Theme Background and Inter Font /
-body {
-background-color: #111827; / dark-gray /
-font-family: 'Inter', sans-serif;
-color: #d1d5db; / Light gray text /
-padding: 2rem 1rem;
-}
-/ Main Report Card Styling /
-.report-card {
-background-color: #1f2937; / Lighter dark-gray / bg-gray-800 equivalent /
-max-width: 1200px;
-margin: 0 auto;
-border-radius: 1rem;
-box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.4), 0 10px 10px -5px rgba(0, 0, 0, 0.3);
-padding: 3rem 2rem;
-}
-/ Table Styles /
-.table-header {
-background-color: #374151; / bg-gray-700 /
-color: #f3f4f6;
-}
-.table-row-odd {
-background-color: #1f2937; / bg-gray-800 /
-}
-.table-row-even {
-background-color: #374151; / bg-gray-700 /
-}
-/ Custom scrollbar for aesthetic, optional /
-::-webkit-scrollbar {
-width: 8px;
-}
-::-webkit-scrollbar-track {
-background: #1f2937;
-}
-::-webkit-scrollbar-thumb {
-background: #4b5563;
-border-radius: 4px;
-}
-::-webkit-scrollbar-thumb:hover {
-background: #6b7280;
-}
-/ Color for Positive/Negative numbers /
-.positive { color: #4ade80; } / text-green-400 /
-.negative { color: #f87171; } / text-red-400 /
-.neutral { color: #9ca3af; } / text-gray-400 */
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mattel Norwegian Toy Market Analysis</title>
+    <!-- Load Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Custom font and basic styling */
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f7f7f7;
+        }
+        .section-header {
+            border-left: 4px solid #cc0033; /* Mattel-inspired red */
+            padding-left: 1rem;
+        }
+    </style>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'mattel-red': '#cc0033',
+                        'mattel-pink': '#f04e84',
+                        'mattel-gray': '#333333',
+                    },
+                }
+            }
+        }
+    </script>
 </head>
-<body>
+<body class="p-4 sm:p-8">
 
-<div class="report-card">
+    <div class="max-w-4xl mx-auto bg-white shadow-xl rounded-xl p-6 sm:p-10">
 
-    <header class="mb-10 p-6 rounded-lg bg-blue-600 shadow-xl">
-        <h1 class="text-4xl font-extrabold text-white tracking-tight">
-            Competitive Analysis Report
-        </h1>
-        <p class="text-xl font-medium text-blue-200 mt-2">
-            Norwegian Toy Market Analysis - Mattel Perspective
-        </p>
-        <div class="text-sm text-blue-300 mt-4 border-t border-blue-500 pt-2">
-            Report Date: September 29, 2025
-        </div>
-    </header>
+        <!-- Header -->
+        <header class="mb-8">
+            <h1 class="text-4xl font-bold text-mattel-red mb-2">Norwegian Toy Market Analysis</h1>
+            <p class="text-xl text-mattel-gray">A Comprehensive Market Assessment for Mattel</p>
+            <div class="h-1 w-full bg-mattel-pink mt-4 rounded-full"></div>
+        </header>
 
-    <section class="mb-12">
-        <h2 class="text-3xl font-bold mb-4 text-white border-b border-gray-600 pb-2">Executive Summary</h2>
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-            <div class="p-5 rounded-lg border border-gray-700">
-                <p class="text-gray-400 text-sm">Market Penetration</p>
-                <p class="text-2xl font-semibold positive">Excellent</p>
-                <p class="text-lg mt-1">823 Tracked Products</p>
+        <!-- Market Position Overview -->
+        <section class="mb-10">
+            <h2 class="text-2xl font-semibold text-mattel-gray section-header mb-4">Market Position Overview</h2>
+            <p class="text-gray-700 leading-relaxed">
+                Mattel maintains a <strong class="text-mattel-red">strong market presence</strong> in Norway, tracking 823 products across 108 different retailers. This demonstrates excellent market penetration. The brand achieves <strong class="text-mattel-red">price leadership on 530 product instances (64.4%)</strong> of tracked products, indicating strong competitive positioning.
+            </p>
+        </section>
+
+        <!-- Key Market Challenges -->
+        <section class="mb-10">
+            <h2 class="text-2xl font-semibold text-mattel-gray section-header mb-4">Key Market Challenges</h2>
+            <div class="space-y-6">
+
+                <!-- 1. Price Inconsistency Across Channels -->
+                <div>
+                    <h3 class="text-xl font-medium text-mattel-gray mb-2">1. Price Inconsistency Across Channels</h3>
+                    <ul class="list-disc list-inside ml-4 space-y-1 text-gray-700">
+                        <li>Average market position is **4.6**, indicating a mid-tier pricing position.</li>
+                        <li>Significant price variations exist, with some products showing spreads of over **3,000 NOK**.</li>
+                        <li>Example: The "Disney Princess Ultimate Castle Dollhouse" ranges from **1,268 NOK to 4,861 NOK** across retailers.</li>
+                    </ul>
+                </div>
+
+                <!-- 2. Aggressive Price Competition -->
+                <div>
+                    <h3 class="text-xl font-medium text-mattel-gray mb-2">2. Aggressive Price Competition</h3>
+                    <ul class="list-disc list-inside ml-4 space-y-1 text-gray-700">
+                        <li>International platforms like <strong class="font-bold">eBay.com</strong> and <strong class="font-bold">tradeinn.com</strong> are winning significant price battles.</li>
+                        <li>eBay.com achieves the lowest average winning prices (**209.61 NOK**) across 52 products.</li>
+                        <li>Tradeinn.com leads with **77 price victories** at an average winning price of **288.05 NOK**.</li>
+                    </ul>
+                </div>
+
+                <!-- 3. Channel Fragmentation -->
+                <div>
+                    <h3 class="text-xl font-medium text-mattel-gray mb-2">3. Channel Fragmentation</h3>
+                    <ul class="list-disc list-inside ml-4 space-y-1 text-gray-700">
+                        <li>Products are distributed across **108+ retailers**, creating complexity in pricing coordination.</li>
+                        <li>No single dominant retailer partner (the largest carries only 39% of tracked products).</li>
+                    </ul>
+                </div>
             </div>
-            <div class="p-5 rounded-lg border border-gray-700">
-                <p class="text-gray-400 text-sm">Price Leadership Rate</p>
-                <p class="text-2xl font-semibold positive">64.4%</p>
-                <p class="text-lg mt-1">530 Product Instances</p>
-            </div>
-            <div class="p-5 rounded-lg border border-gray-700">
-                <p class="text-gray-400 text-sm">Average Market Position</p>
-                <p class="text-2xl font-semibold negative">4.6</p>
-                <p class="text-lg mt-1">Mid-tier Pricing Potential</p>
-            </div>
-        </div>
-        <p class="mt-4 text-gray-300 leading-relaxed">
-            Mattel maintains a strong foothold in the Norwegian market with extensive product distribution. However, the data reveals significant price inconsistencies and aggressive competition, particularly from international platforms. Strategic focus on **Pricing Governance** and **Channel Strategy Optimization** is crucial to convert excellent penetration into improved profitability and market position.
-        </p>
-    </section>
+        </section>
 
-    <section class="mb-12">
-        <h2 class="text-3xl font-bold mb-4 text-white border-b border-gray-600 pb-2">Market Position Overview</h2>
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
-            <div>
-                <h3 class="text-2xl font-semibold mb-3 text-white">Market Presence Summary</h3>
-                <ul class="space-y-3">
-                    <li class="flex justify-between items-center p-3 rounded-md bg-gray-700">
-                        <span class="font-medium">Total Tracked Products:</span>
-                        <span class="text-xl font-bold positive">823</span>
-                    </li>
-                    <li class="flex justify-between items-center p-3 rounded-md bg-gray-700">
-                        <span class="font-medium">Retailer Network Size:</span>
-                        <span class="text-xl font-bold positive">108+</span>
-                    </li>
-                    <li class="flex justify-between items-center p-3 rounded-md bg-gray-700">
-                        <span class="font-medium">Products with Price Leadership:</span>
-                        <span class="text-xl font-bold positive">530 (64.4%)</span>
-                    </li>
-                </ul>
-            </div>
+        <!-- Market Opportunities -->
+        <section class="mb-10">
+            <h2 class="text-2xl font-semibold text-mattel-gray section-header mb-4">Market Opportunities</h2>
+            <div class="space-y-6">
 
-            <div>
-                <h3 class="text-2xl font-semibold mb-3 text-white">Top Mattel Retailers by Product Count</h3>
-                <table class="min-w-full rounded-lg overflow-hidden">
+                <!-- 1. Premium Product Positioning -->
+                <div>
+                    <h3 class="text-xl font-medium text-mattel-gray mb-2">1. Premium Product Positioning</h3>
+                    <ul class="list-disc list-inside ml-4 space-y-1 text-gray-700">
+                        <li>Strong performance in higher price segments (**1000+ NOK** products show competitive positioning).</li>
+                        <li><strong class="font-bold">Collector/Signature Barbie</strong> lines show premium pricing acceptance.</li>
+                        <li>Disney partnerships command premium pricing (2,728 NOK average for castle dollhouse).</li>
+                    </ul>
+                </div>
+
+                <!-- 2. Price Optimization Potential -->
+                <div>
+                    <h3 class="text-xl font-medium text-mattel-gray mb-2">2. Price Optimization Potential</h3>
+                    <ul class="list-disc list-inside ml-4 space-y-1 text-gray-700">
+                        <li>Data reveals significant opportunities for better pricing coordination.</li>
+                        <li>Room to improve from the current **4.6** average market position.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Product Distribution Data -->
+        <section class="mb-10">
+            <h2 class="text-2xl font-semibold text-mattel-gray section-header mb-4">Mattel Product Distribution by Price Range</h2>
+            <div class="overflow-x-auto rounded-lg shadow-md">
+                <table class="min-w-full bg-white text-sm">
                     <thead>
-                        <tr class="table-header text-left uppercase text-sm">
-                            <th class="p-3">Retailer</th>
-                            <th class="p-3">Focus</th>
+                        <tr class="bg-mattel-red text-white">
+                            <th class="py-3 px-6 text-left font-bold uppercase tracking-wider rounded-tl-lg">Price Range</th>
+                            <th class="py-3 px-6 text-left font-bold uppercase tracking-wider">Product Count</th>
+                            <th class="py-3 px-6 text-left font-bold uppercase tracking-wider rounded-tr-lg">Product Positioning</th>
                         </tr>
                     </thead>
                     <tbody>
-                        <tr class="table-row-odd">
-                            <td class="p-3">computersalg.no</td>
-                            <td class="p-3 neutral">Largest Distribution</td>
+                        <tr class="border-b border-gray-100 hover:bg-red-50">
+                            <td class="py-3 px-6 text-gray-800">Under 100 NOK</td>
+                            <td class="py-3 px-6 text-gray-800">68</td>
+                            <td class="py-3 px-6 text-gray-800">2.15</td>
                         </tr>
-                        <tr class="table-row-even">
-                            <td class="p-3">cdon.no</td>
-                            <td class="p-3 neutral">Major E-commerce</td>
+                        <tr class="border-b border-gray-100 hover:bg-red-50 bg-red-50">
+                            <td class="py-3 px-6 text-gray-800">100-199 NOK</td>
+                            <td class="py-3 px-6 text-gray-800">638</td>
+                            <td class="py-3 px-6 text-gray-800">4.49</td>
                         </tr>
-                        <tr class="table-row-odd">
-                            <td class="p-3">eurotoys.net</td>
-                            <td class="p-3 neutral">Specialized Toy Retailer</td>
+                        <tr class="border-b border-gray-100 hover:bg-red-50">
+                            <td class="py-3 px-6 text-gray-800">200-399 NOK</td>
+                            <td class="py-3 px-6 text-gray-800">1.1k</td>
+                            <td class="py-3 px-6 text-gray-800">4.94</td>
                         </tr>
-                        <tr class="table-row-even">
-                            <td class="p-3">ebay.com</td>
-                            <td class="p-3 negative">International Competitor</td>
+                        <tr class="border-b border-gray-100 hover:bg-red-50 bg-red-50">
+                            <td class="py-3 px-6 text-gray-800">400-599 NOK</td>
+                            <td class="py-3 px-6 text-gray-800">530</td>
+                            <td class="py-3 px-6 text-gray-800">4.37</td>
                         </tr>
-                    </tbody>
-                </table>
-                <p class="text-sm text-gray-400 mt-2">
-                    *The largest retailer carries only 39% of tracked products, indicating high channel fragmentation.
-                </p>
-            </div>
-        </div>
-    </section>
-
-    <section class="mb-12">
-        <h2 class="text-3xl font-bold mb-4 text-white border-b border-gray-600 pb-2">Key Market Challenges</h2>
-        <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
-            <div class="p-6 rounded-lg border border-red-800 bg-red-900/20">
-                <h3 class="text-xl font-bold negative mb-3">1. Price Inconsistency Across Channels</h3>
-                <ul class="list-disc ml-5 space-y-2 text-gray-300">
-                    <li>Average market position: <span class="font-semibold negative">4.6</span></li>
-                    <li>Price spreads exceed <span class="font-semibold negative">3,000 NOK</span> on some products.</li>
-                    <li>Example: "Disney Princess Ultimate Castle Dollhouse" ranges from <span class="font-semibold neutral">1,268 NOK to 4,861 NOK</span>.</li>
-                </ul>
-            </div>
-            <div class="p-6 rounded-lg border border-red-800 bg-red-900/20">
-                <h3 class="text-xl font-bold negative mb-3">2. Aggressive Price Competition</h3>
-                <p class="text-gray-300 mb-2">International platforms are winning significant price battles:</p>
-                <table class="min-w-full rounded-lg overflow-hidden text-sm">
-                    <thead>
-                        <tr class="table-header text-left uppercase">
-                            <th class="p-2">Retailer</th>
-                            <th class="p-2">Price Wins</th>
-                            <th class="p-2">Avg. Winning Price</th>
+                        <tr class="border-b border-gray-100 hover:bg-red-50">
+                            <td class="py-3 px-6 text-gray-800">600-999 NOK</td>
+                            <td class="py-3 px-6 text-gray-800">380</td>
+                            <td class="py-3 px-6 text-gray-800">4.83</td>
                         </tr>
-                    </thead>
-                    <tbody>
-                        <tr class="table-row-odd">
-                            <td class="p-2">tradeinn.com</td>
-                            <td class="p-2">77</td>
-                            <td class="p-2">288.05 NOK</td>
-                        </tr>
-                        <tr class="table-row-even">
-                            <td class="p-2">ebay.com</td>
-                            <td class="p-2">52</td>
-                            <td class="p-2">209.61 NOK</td>
+                        <tr class="hover:bg-red-50 bg-red-50">
+                            <td class="py-3 px-6 text-gray-800">1000+ NOK</td>
+                            <td class="py-3 px-6 text-gray-800">109</td>
+                            <td class="py-3 px-6 text-gray-800">4.4</td>
                         </tr>
                     </tbody>
                 </table>
             </div>
-            <div class="p-6 rounded-lg border border-red-800 bg-red-900/20">
-                <h3 class="text-xl font-bold negative mb-3">3. Channel Fragmentation</h3>
-                <ul class="list-disc ml-5 space-y-2 text-gray-300">
-                    <li>Products across <span class="font-semibold">108+ retailers</span>, complicating pricing coordination.</li>
-                    <li>No single dominant partner, creating logistical and pricing complexity.</li>
-                    <li>Largest retailer holds only <span class="font-semibold">39%</span> of tracked products.</li>
-                </ul>
-            </div>
-        </div>
-    </section>
+        </section>
 
-    <section class="mb-12">
-        <h2 class="text-3xl font-bold mb-4 text-white border-b border-gray-600 pb-2">Market Opportunities</h2>
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
-            <div>
-                <h3 class="text-2xl font-semibold mb-3 text-white">1. Premium Product Positioning</h3>
-                <ul class="list-disc ml-5 space-y-2 text-gray-300">
-                    <li>Strong performance in higher price segments (<span class="font-semibold positive">1000+ NOK</span> products show competitive positioning).</li>
-                    <li>Collector/Signature Barbie lines show excellent premium pricing acceptance.</li>
-                    <li>Disney partnerships command premium (<span class="font-semibold neutral">2,728 NOK</span> average for castle dollhouse).</li>
-                </ul>
 
-                <h3 class="text-2xl font-semibold mt-6 mb-3 text-white">2. Price Optimization Potential</h3>
-                <p class="text-gray-300 mb-3">The current distribution of Mattel products by price range:</p>
-                <table class="min-w-full rounded-lg overflow-hidden text-sm">
-                    <thead>
-                        <tr class="table-header text-left uppercase">
-                            <th class="p-2">Price Range</th>
-                            <th class="p-2">Product Count</th>
-                            <th class="p-2">Avg Position</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr class="table-row-odd">
-                            <td class="p-2">Under 100 NOK</td>
-                            <td class="p-2">High</td>
-                            <td class="p-2 neutral">5.1</td>
-                        </tr>
-                        <tr class="table-row-even">
-                            <td class="p-2">1000+ NOK</td>
-                            <td class="p-2">Moderate</td>
-                            <td class="p-2 positive">3.2</td>
-                        </tr>
-                        </tbody>
-                </table>
-                <p class="text-sm text-gray-400 mt-2">
-                    Significant room to improve from the current <span class="font-semibold negative">4.6</span> average market position via targeted coordination.
-                </p>
-            </div>
+        <!-- Strategic Recommendations -->
+        <section class="mb-10">
+            <h2 class="text-2xl font-semibold text-mattel-gray section-header mb-4">Strategic Recommendations</h2>
+            <div class="space-y-6">
 
-            <div class="p-6 rounded-lg border border-green-800 bg-green-900/20">
-                <h3 class="text-2xl font-semibold positive mb-3">3. Channel Strategy Optimization</h3>
-                <p class="text-gray-300 mb-3">Focus on key partners for stability and growth:</p>
-                <ul class="list-disc ml-5 space-y-2 text-gray-300">
-                    <li>**computersalg.no:** Strongest distribution + <span class="font-semibold positive">70 price wins</span>. Ideal for leveraging scale.</li>
-                    <li>**eurotoys.net:** Specialized toy retailer. Ideal for category expertise and premium showcasing.</li>
-                    <li>**Strategic Address:** Need to create a strategy to address international platform competition (eBay/Tradeinn) without sacrificing local partner relationships.</li>
-                </ul>
-            </div>
-        </div>
-    </section>
-
-    <section class="mb-12">
-        <h2 class="text-3xl font-bold mb-4 text-white border-b border-gray-600 pb-2">Strategic Recommendations</h2>
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <div>
-                <div class="p-5 rounded-lg border border-blue-600 bg-blue-900/20 mb-6">
-                    <h3 class="text-xl font-bold text-blue-400 mb-3">1. Pricing Governance</h3>
-                    <ul class="list-disc ml-5 space-y-2 text-gray-300">
-                        <li>Implement **Minimum Advertised Price (MAP)** policies to curb extreme price variations.</li>
-                        <li>Focus coordination on high-visibility and premium products.</li>
-                        <li>Develop a mechanism to address international platform arbitrage.</li>
+                <!-- 1. Pricing Governance -->
+                <div>
+                    <h3 class="text-xl font-medium text-mattel-gray mb-2">1. Pricing Governance</h3>
+                    <ul class="list-disc list-inside ml-4 space-y-1 text-gray-700">
+                        <li>Implement **MAP (Minimum Advertised Price) policies** to reduce extreme price variations.</li>
+                        <li>Focus on coordinating pricing for high-visibility premium products.</li>
+                        <li>Address international platform arbitrage opportunities.</li>
                     </ul>
                 </div>
-                <div class="p-5 rounded-lg border border-blue-600 bg-blue-900/20">
-                    <h3 class="text-xl font-bold text-blue-400 mb-3">3. Premium Portfolio Focus</h3>
-                    <ul class="list-disc ml-5 space-y-2 text-gray-300">
-                        <li>Continue investment in collector/signature lines that command premium pricing.</li>
-                        <li>Leverage strategic Disney partnerships for elevated market positioning.</li>
-                        <li>Use premium products to elevate overall brand perception across the market.</li>
+
+                <!-- 2. Channel Partnership Strategy -->
+                <div>
+                    <h3 class="text-xl font-medium text-mattel-gray mb-2">2. Channel Partnership Strategy</h3>
+                    <ul class="list-disc list-inside ml-4 space-y-1 text-gray-700">
+                        <li>Strengthen relationships with top-performing retailers (computersalg.no, eurotoys.net).</li>
+                        <li>Consider exclusive product launches with key Norwegian toy specialists.</li>
+                        <li>Develop different product mixes for different channel types.</li>
                     </ul>
                 </div>
-            </div>
-            <div>
-                <div class="p-5 rounded-lg border border-blue-600 bg-blue-900/20 mb-6">
-                    <h3 class="text-xl font-bold text-blue-400 mb-3">2. Channel Partnership Strategy</h3>
-                    <ul class="list-disc ml-5 space-y-2 text-gray-300">
-                        <li>Strengthen ties with top performers (<span class="font-semibold">computersalg.no, eurotoys.net</span>).</li>
-                        <li>Consider exclusive product launches with key Norwegian specialists.</li>
-                        <li>Develop unique product mixes tailored for different channel types (e.g., mass-market vs. specialty).</li>
+
+                <!-- 3. Premium Portfolio Focus -->
+                <div>
+                    <h3 class="text-xl font-medium text-mattel-gray mb-2">3. Premium Portfolio Focus</h3>
+                    <ul class="list-disc list-inside ml-4 space-y-1 text-gray-700">
+                        <li>Continue investing in collector/signature lines to command premium pricing.</li>
+                        <li>Leverage Disney partnerships for market positioning.</li>
+                        <li>Use premium products to elevate overall brand perception.</li>
                     </ul>
                 </div>
-                <div class="p-5 rounded-lg border border-blue-600 bg-blue-900/20">
-                    <h3 class="text-xl font-bold text-blue-400 mb-3">4. Competitive Monitoring</h3>
-                    <ul class="list-disc ml-5 space-y-2 text-gray-300">
-                        <li>Implement systematic monitoring of the entire <span class="font-semibold">108+ retailer network</span>.</li>
+
+                <!-- 4. Competitive Monitoring -->
+                <div>
+                    <h3 class="text-xl font-medium text-mattel-gray mb-2">4. Competitive Monitoring</h3>
+                    <ul class="list-disc list-inside ml-4 space-y-1 text-gray-700">
+                        <li>Implement systematic monitoring of the **108 retailer network**.</li>
                         <li>Focus particularly on international platforms disrupting local pricing.</li>
-                        <li>Track price leadership metrics weekly to identify emerging competitive threats.</li>
+                        <li>Track price leadership metrics to identify emerging competitive threats.</li>
                     </ul>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <footer class="mt-12 pt-6 border-t border-gray-700 flex justify-between items-center">
-        
-        <div>
-            <p class="text-lg font-semibold text-white mb-2">Next Steps: Deep Dive Strategy Session</p>
-            <a href="https://meetings-eu1.hubspot.com/jonas-jensen" target="_blank" class="inline-block px-6 py-3 text-sm font-medium text-white bg-green-600 rounded-lg hover:bg-green-700 transition duration-300">
-                Book a Meeting
-            </a>
-        </div>
+        <!-- Final Summary -->
+        <footer class="mt-8 pt-4 border-t border-gray-200">
+            <p class="text-gray-600 italic text-center">
+                The Norwegian market presents both strong opportunities and challenges for Mattel. While market penetration is excellent, there's significant room for pricing optimization and strategic channel management to improve profitability and market position.
+            </p>
+        </footer>
 
-        <button id="downloadBtn" class="px-6 py-3 text-sm font-medium text-white bg-blue-600 rounded-lg hover:bg-blue-700 transition duration-300 flex items-center">
-            <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
-            Download Report
-        </button>
-    </footer>
+    </div>
 
-</div>
-
-<script>
-    document.getElementById('downloadBtn').addEventListener('click', function() {
-        const htmlContent = document.documentElement.outerHTML;
-        const blob = new Blob([htmlContent], { type: 'text/html' });
-        const a = document.createElement('a');
-        a.href = URL.createObjectURL(blob);
-        a.download = 'Competitive_Analysis_Report.html';
-        document.body.appendChild(a);
-        a.click();
-        document.body.removeChild(a);
-    });
-</script>
 </body>
 </html>
